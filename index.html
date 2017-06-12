@@ -271,6 +271,16 @@
 
         <script>
 
+        	var canvas = document.getElementById("fbCanvas");
+            var ctx = canvas.getContext("2d");
+            var imgobj = new Image();
+            imgobj.src="images/fb.jpg" 
+            ctx.drawImage(imgobj, 0, 0);
+
+            var fbobj = new Image();
+            fbobj.src="images/fb icon.png" 
+            ctx.drawImage(fbobj, 100, 100);
+
           function imagetext()
             {
               var canvas = document.getElementById("fbCanvas");
