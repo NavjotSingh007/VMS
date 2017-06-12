@@ -1,0 +1,22 @@
+.small-pics {
+	height: 150px;
+	width: 150px;
+}
+
+.vertical-line{
+	  background-color: black;
+	  color: black;
+      width: 0px; /* Use only border style */
+      height: 100%;
+      float: left; 
+      border: 1px inset; /* This is default border style for <hr> tag */
+    }
+
+.red{
+	color: red;
+}
+
+.heading{
+  font-size: 15px;
+  font-style: italic;
+}
