@@ -270,16 +270,27 @@
         </canvas>
 
         <script>
-
-        	var canvas = document.getElementById("fbCanvas");
-            var ctx = canvas.getContext("2d");
             var imgobj = new Image();
+
+            imgobj.onload = function(){
+            	var canvas = document.getElementById("fbCanvas");
+            	var ctx = canvas.getContext("2d");
+            	ctx.drawImage(imgobj, 0, 0);
+            }
+
             imgobj.src="images/fb.jpg" 
-            ctx.drawImage(imgobj, 0, 0);
+            
 
             var fbobj = new Image();
+
+            fbobj.onload = function(){
+            	var canvas = document.getElementById("fbCanvas");
+            	var ctx = canvas.getContext("2d");
+            	ctx.drawImage(fbobj, 100, 100);	
+            }
+
             fbobj.src="images/fb icon.png" 
-            ctx.drawImage(fbobj, 100, 100);
+            
 
           function imagetext()
             {
@@ -330,17 +341,23 @@
 
         <script>
 
-          var canvas = document.getElementById("basketCanvas");
-            var ctx = canvas.getContext("2d");
+          
             var basketobj = new Image();
+            basketobj.onload = function(){
+            	var canvas = document.getElementById("basketCanvas");
+           		var ctx = canvas.getContext("2d");
+           		ctx.drawImage(basketobj, 0, 0);
+            }
             basketobj.src="images/basketball.png" 
-            ctx.drawImage(basketobj, 0, 0);
+            
 
             var camobj = new Image();
-            camobj.src="images/camera.png" 
-            ctx.drawImage(camobj, 100, 100);
-
-          
+            camobj.onload = function(){
+            	var canvas = document.getElementById("basketCanvas");
+           		var ctx = canvas.getContext("2d");
+           		ctx.drawImage(camobj, 100, 100);
+            }
+            camobj.src="images/camera.png"      
 
           function camimagetext()
             {
@@ -390,15 +407,22 @@
 
         <script>
 
-          var canvas = document.getElementById("newsCanvas");
-            var ctx = canvas.getContext("2d");
             var newstileobj = new Image();
+            newstileobj.onload = function(){
+            	var canvas = document.getElementById("newsCanvas");
+            	var ctx = canvas.getContext("2d");
+            	ctx.drawImage(newstileobj, 0, 0);
+            }
             newstileobj.src="images/news-tile-photo.png" 
-            ctx.drawImage(newstileobj, 0, 0);
-
+            
             var newsobj = new Image();
+            newsobj.onload = function(){
+            	var canvas = document.getElementById("newsCanvas");
+            	var ctx = canvas.getContext("2d");
+            	ctx.drawImage(newsobj, 230, 100);
+            }
             newsobj.src="images/news.png" 
-            ctx.drawImage(newsobj, 230, 100);
+            
 
           
 
@@ -453,15 +477,24 @@
 
         <script>
 
-          var canvas = document.getElementById("internationalCanvas");
-            var ctx = canvas.getContext("2d");
+          
             var internationalobj = new Image();
+            internationalobj.onload = function(){
+            	var canvas = document.getElementById("internationalCanvas");
+            	var ctx = canvas.getContext("2d");
+            	ctx.drawImage(internationalobj, 0, 0);
+            }
             internationalobj.src="images/international.png" 
-            ctx.drawImage(internationalobj, 0, 0);
+            
 
             var globeobj = new Image();
+            globeobj.onload = function(){
+            	var canvas = document.getElementById("internationalCanvas");
+            	var ctx = canvas.getContext("2d");
+            	ctx.drawImage(globeobj, 100, 100);
+            }
             globeobj.src="images/globe.png" 
-            ctx.drawImage(globeobj, 100, 100);
+            
 
           
 
@@ -513,15 +546,24 @@
 
         <script>
 
-          var canvas = document.getElementById("schoolCanvas");
-            var ctx = canvas.getContext("2d");
+          
             var schoolobj = new Image();
+            schoolobj.onload = function(){
+            	var canvas = document.getElementById("schoolCanvas");
+            	var ctx = canvas.getContext("2d");
+            	ctx.drawImage(schoolobj, 0, 0);
+            }
             schoolobj.src="images/school.png" 
-            ctx.drawImage(schoolobj, 0, 0);
+            
 
             var blogobj = new Image();
+            blogobj.onload = function(){
+            	var canvas = document.getElementById("schoolCanvas");
+            	var ctx = canvas.getContext("2d");
+            	ctx.drawImage(blogobj, 100, 100);
+            }
             blogobj.src="images/blog.png" 
-            ctx.drawImage(blogobj, 100, 100);
+            
 
           
 
@@ -573,15 +615,25 @@
 
         <script>
 
-          var canvas = document.getElementById("snowCanvas");
-            var ctx = canvas.getContext("2d");
+          
             var snowobj = new Image();
-            snowobj.src="images/skeeing.jpg" 
-            ctx.drawImage(snowobj, 0, 0);
+            snowobj.onload = function(){
+            	var canvas = document.getElementById("snowCanvas");
+            	var ctx = canvas.getContext("2d");
+            	ctx.drawImage(snowobj, 0, 0);
+            }
+            snowobj.src="images/skeeing.jpg"; 
+            
 
             var skiobj = new Image();
-            skiobj.src="images/ski.png" 
-            ctx.drawImage(skiobj, 230, 100);
+            skiobj.src="images/ski.png";
+            skiobj.onload = function(){
+            	var canvas = document.getElementById("snowCanvas");
+            	var ctx = canvas.getContext("2d");
+            	ctx.drawImage(skiobj, 210, 90);
+            }
+             
+            
 
           
 
@@ -601,7 +653,7 @@
 
             var skiobj = new Image();
             skiobj.src="images/ski.png" 
-            ctx.drawImage(skiobj, 230, 10);
+            ctx.drawImage(skiobj, 210, 10);
 
             
 
@@ -620,7 +672,7 @@
 
             var skiobj = new Image();
             skiobj.src="images/ski.png" 
-            ctx.drawImage(skiobj, 230, 100);
+            ctx.drawImage(skiobj, 210, 90);
             }
         </script>
    			</div> 
